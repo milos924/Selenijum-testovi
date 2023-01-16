@@ -1,0 +1,1024 @@
+{
+  "id": "b37f9ef6-49a5-43b9-a3d6-d42ba1fa3975",
+  "version": "2.0",
+  "name": "TSWprojekat",
+  "url": "https://spektar.rs",
+  "tests": [{
+    "id": "3404b3ac-a12a-45a0-8e5a-2d25f88589d0",
+    "name": "RegistracijaTest",
+    "commands": [{
+      "id": "23bec7f1-a9e2-4986-8a4e-77043a984ebf",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d14ec2b-54ea-42c5-a4a1-94102e5e94f4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1696x1026",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e68a7dc1-06d6-4703-ae2f-a943f4a99a26",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Prijavi se",
+      "targets": [
+        ["linkText=Prijavi se", "linkText"],
+        ["css=.header__menu > li:nth-child(4) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Prijavi se')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/login')])[2]", "xpath:href"],
+        ["xpath=//header/div/div[2]/div/ul/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5209caf-f6b4-4235-b654-1eec411ab513",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Registruj se",
+      "targets": [
+        ["linkText=Registruj se", "linkText"],
+        ["css=.button-links > a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Registruj se')]", "xpath:link"],
+        ["xpath=//form[@id='login-form']/div[3]/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/register')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Registruj se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a06d70d-36a4-46c1-a5dd-242d51acc9b3",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='register-form']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6df18ab9-734b-4c9b-9fa5-ee881d85e68c",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='register-form']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "miloskovacevic889@gmail.com"
+    }, {
+      "id": "4c0ac172-2135-4259-bd8e-4ec8621dff91",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button > span",
+      "targets": [
+        ["css=.button > span", "css:finder"],
+        ["xpath=//form[@id='register-form']/div[2]/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a8dac3d-5a31-48c4-ba30-d19a24acfb64",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.message",
+      "targets": [
+        ["css=.message", "css:finder"],
+        ["xpath=//div/div/div[2]/div/div[2]", "xpath:position"]
+      ],
+      "value": "Link za potvrdu registracije Vam je poslat na email adresu. Proverite svoj email, i završite proces registracije."
+    }, {
+      "id": "c731cafd-4857-4507-aae2-565350c650ed",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "54ab7935-62ee-431b-9f19-1fab8bf4e21f",
+    "name": "LogovanjeTest",
+    "commands": [{
+      "id": "9ebbb706-98bd-47e3-91ff-659f7b0a066a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "60eee921-2a59-453d-92ba-0d58763ccbb6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1696x1026",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ad4acbe4-9c11-4883-8b37-216609d51c68",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Prijavi se",
+      "targets": [
+        ["linkText=Prijavi se", "linkText"],
+        ["css=.header__menu > li:nth-child(4) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Prijavi se')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/login')])[2]", "xpath:href"],
+        ["xpath=//header/div/div[2]/div/ul/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ec204cd-d7fb-4f2d-9360-3ea58440ae60",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "miloskovacevic22@gmail.com"
+    }, {
+      "id": "c9ec1ca6-2292-4ee6-894f-9549a389b229",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "61158ad3-4a8a-46b0-bbb7-35d1b7d40f08",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "milos123#"
+    }, {
+      "id": "59533419-8563-4a33-ac95-9f4c0f62e4c2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button > span",
+      "targets": [
+        ["css=.button > span", "css:finder"],
+        ["xpath=//form[@id='login-form']/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c5b7179-06bd-4515-8fbd-696688c8a827",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Profil",
+      "targets": [
+        ["linkText=Profil", "linkText"],
+        ["css=.header__menu > li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Profil')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/profile')]", "xpath:href"],
+        ["xpath=//header/div/div[2]/div/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Profil')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "35ef0bce-2d3c-4324-b81c-23dd20655760",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pull-right:nth-child(1) > span",
+      "targets": [
+        ["css=.pull-right:nth-child(1) > span", "css:finder"],
+        ["xpath=//div/div/div[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bb06e58-269b-4315-9fc1-9e53425a7b51",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "56a0fc91-4543-4043-a840-b2952e61db0b",
+    "name": "ValidnostTest",
+    "commands": [{
+      "id": "b5673fee-bc4d-40c5-a098-6e2825cb086b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6be3d4ac-16a5-4c2e-87f0-d790d7a0b124",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1696x1026",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ccc47f16-c9eb-4156-8795-820c9732ef59",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Prijavi se",
+      "targets": [
+        ["linkText=Prijavi se", "linkText"],
+        ["css=.header__menu > li:nth-child(4) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Prijavi se')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/login')])[2]", "xpath:href"],
+        ["xpath=//header/div/div[2]/div/ul/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b03e04fd-ca9c-451d-9a56-9c3c675f45e3",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "miloskovacevic22@gmail.com"
+    }, {
+      "id": "9a6efe75-d00a-4732-9f34-e54dd801735d",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "30b1d64b-80ae-4411-9c13-2127cbf38662",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "milos123#"
+    }, {
+      "id": "2a1beb5d-f496-4d05-8cf5-f6eedcc2e3ed",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button > span",
+      "targets": [
+        ["css=.button > span", "css:finder"],
+        ["xpath=//form[@id='login-form']/div[3]/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4630a32d-58ac-426e-b27e-5eb20e867937",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Profil",
+      "targets": [
+        ["linkText=Profil", "linkText"],
+        ["css=.header__menu > li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Profil')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/profile')]", "xpath:href"],
+        ["xpath=//header/div/div[2]/div/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Profil')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "440a96ca-6e23-40cf-ad23-33a868457f2f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.auth-page",
+      "targets": [
+        ["css=.auth-page", "css:finder"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cae71782-7d01-4c9b-b623-876e3c50cd51",
+      "comment": "",
+      "command": "click",
+      "target": "css=.auth-page",
+      "targets": [
+        ["css=.auth-page", "css:finder"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3e9b2c9-6b02-429a-a056-c591d56dc2e0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group",
+      "targets": [
+        ["css=.form-group", "css:finder"],
+        ["xpath=//form[@id='update-profile-form']/div[4]", "xpath:idRelative"],
+        ["xpath=//form/div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff3141a8-3447-425a-89b3-d0d7bd1bcbde",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form__box",
+      "targets": [
+        ["css=.form__box", "css:finder"],
+        ["xpath=//div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "93f5960e-dc99-4002-b54e-55ef175c467a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pull-right:nth-child(1) > span",
+      "targets": [
+        ["css=.pull-right:nth-child(1) > span", "css:finder"],
+        ["xpath=//div/div/div[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "59955b14-632e-4ce1-a89e-2cf6c90addfe",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "352f9798-8939-4b90-8c1e-b7d28d75ee93",
+    "name": "DodavanjeUKorpuTest",
+    "commands": [{
+      "id": "1044a149-af08-4b6f-adbc-180ef6afbdb9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "58da4a59-eaf1-47b6-9da7-e97bcf6e70fc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1696x1026",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b521059f-1d9a-4f75-b00e-a675d501dd94",
+      "comment": "",
+      "command": "click",
+      "target": "css=#tab1 .is-selected .product-box__name",
+      "targets": [
+        ["css=#tab1 .is-selected .product-box__name", "css:finder"],
+        ["xpath=//div[@id='tab1']/div/div/div/a/div[2]/div", "xpath:idRelative"],
+        ["xpath=//a/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54f0e143-c02e-41ac-a69d-59ab42ebc760",
+      "comment": "",
+      "command": "click",
+      "target": "css=.add-to-cart > span",
+      "targets": [
+        ["css=.add-to-cart > span", "css:finder"],
+        ["xpath=//div[5]/div/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "337fa5ff-a1eb-4b07-bc5a-6c6000c0d256",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product-box:nth-child(2) .product-box__name",
+      "targets": [
+        ["css=.product-box:nth-child(2) .product-box__name", "css:finder"],
+        ["xpath=//div[@id='tab1']/div/div/div[2]/a/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/a/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "27231b2c-6c11-4083-8d90-3b1b115f5040",
+      "comment": "",
+      "command": "click",
+      "target": "css=.add-to-cart",
+      "targets": [
+        ["css=.add-to-cart", "css:finder"],
+        ["xpath=//div[5]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c48c2f0b-a8b1-44d0-86be-5df10928931d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.is-selected .product-box__name",
+      "targets": [
+        ["css=.is-selected .product-box__name", "css:finder"],
+        ["xpath=//div[@id='tab1']/div/div/div/a/div[2]/div", "xpath:idRelative"],
+        ["xpath=//a/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "80ac51ce-3a16-4aab-bc6a-1dfb4faa397a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.add-to-cart > span",
+      "targets": [
+        ["css=.add-to-cart > span", "css:finder"],
+        ["xpath=//div[5]/div/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d5b8aa2-f52e-46a3-a4c7-245bc139936e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cart__button-text",
+      "targets": [
+        ["css=.cart__button-text", "css:finder"],
+        ["xpath=//div[3]/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51461dc7-0e1f-428c-89d4-edd1b774618a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b6cf2803-0b24-447d-8586-7bac696af45c",
+    "name": "JednaksotKorpeTest",
+    "commands": [{
+      "id": "b2a01c16-1a00-4e8c-8232-7090f4d9bc0b",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f26c645-343a-474b-81f1-ab6e38871db1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1696x1026",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "444cd93b-24f3-49c8-bfbc-e3d2f601d6c5",
+      "comment": "",
+      "command": "click",
+      "target": "css=#tab1 .is-selected .product-box__name",
+      "targets": [
+        ["css=#tab1 .is-selected .product-box__name", "css:finder"],
+        ["xpath=//div[@id='tab1']/div/div/div/a/div[2]/div", "xpath:idRelative"],
+        ["xpath=//a/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ba60546-3468-46f7-b4ef-59340f33aafe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.add-to-cart > span",
+      "targets": [
+        ["css=.add-to-cart > span", "css:finder"],
+        ["xpath=//div[5]/div/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "80321f6c-8d7d-42db-bd92-796f6a3a6927",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.product-box:nth-child(2) .product-box__name",
+      "targets": [
+        ["css=.product-box:nth-child(2) .product-box__name", "css:finder"],
+        ["xpath=//div[@id='tab1']/div/div/div[2]/a/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/a/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a7ee50f-d11e-4c51-8b21-5277e61802b1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product-box:nth-child(2) .product-box__name",
+      "targets": [
+        ["css=.product-box:nth-child(2) .product-box__name", "css:finder"],
+        ["xpath=//div[@id='tab1']/div/div/div[2]/a/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/a/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a802d9ee-3e5e-4064-b035-295e0e49256c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.add-to-cart",
+      "targets": [
+        ["css=.add-to-cart", "css:finder"],
+        ["xpath=//div[5]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "49cf8228-9b0c-4e40-909d-9d71e9a6e47a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.is-selected .product-box__name",
+      "targets": [
+        ["css=.is-selected .product-box__name", "css:finder"],
+        ["xpath=//div[@id='tab1']/div/div/div/a/div[2]/div", "xpath:idRelative"],
+        ["xpath=//a/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f11fe6a2-9202-43df-9695-c2e10e6faee2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.add-to-cart",
+      "targets": [
+        ["css=.add-to-cart", "css:finder"],
+        ["xpath=//div[5]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b41b511f-a789-4ade-b8c6-3c3b773f5495",
+      "comment": "",
+      "command": "click",
+      "target": "css=#\\31 5549 > .col-subtotal",
+      "targets": [
+        ["css=#\\31 5549 > .col-subtotal", "css:finder"],
+        ["xpath=//tr[@id='15549']/td[5]", "xpath:idRelative"],
+        ["xpath=//td[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7823ffd3-2d33-44e1-ac3f-2370cbe9273c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#\\31 5550 > .col-subtotal",
+      "targets": [
+        ["css=#\\31 5550 > .col-subtotal", "css:finder"],
+        ["xpath=//tr[@id='15550']/td[5]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4696c091-d84b-4116-bd1a-0a295bc1627b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#\\31 5551 > .col-subtotal",
+      "targets": [
+        ["css=#\\31 5551 > .col-subtotal", "css:finder"],
+        ["xpath=//tr[@id='15551']/td[5]", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c565387-63a3-4130-85e3-4fa5a40ccce4",
+      "comment": "",
+      "command": "click",
+      "target": "id=total",
+      "targets": [
+        ["id=total", "id"],
+        ["css=#total", "css:finder"],
+        ["xpath=//td[@id='total']", "xpath:attributes"],
+        ["xpath=//tr[4]/td[5]", "xpath:position"],
+        ["xpath=//td[contains(.,'26.379,00 RSD')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "46130e16-3dd4-4621-a09a-cbbf2fa20d17",
+      "comment": "",
+      "command": "click",
+      "target": "css=#\\31 5549 > .col-remove .material-icons",
+      "targets": [
+        ["css=#\\31 5549 > .col-remove .material-icons", "css:finder"],
+        ["xpath=//tr[@id='15549']/td[6]/a/i", "xpath:idRelative"],
+        ["xpath=//td[6]/a/i", "xpath:position"],
+        ["xpath=//i[contains(.,'delete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "72ea949a-1cd2-401a-aa40-e26b0d30fd3f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#\\31 5550 > .col-remove .material-icons",
+      "targets": [
+        ["css=#\\31 5550 > .col-remove .material-icons", "css:finder"],
+        ["xpath=//tr[@id='15550']/td[6]/a/i", "xpath:idRelative"],
+        ["xpath=//td[6]/a/i", "xpath:position"],
+        ["xpath=//i[contains(.,'delete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce1ae40b-4973-4a2a-a7a2-af26699f771f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.remove-item > .material-icons",
+      "targets": [
+        ["css=.remove-item > .material-icons", "css:finder"],
+        ["xpath=//tr[@id='15551']/td[6]/a/i", "xpath:idRelative"],
+        ["xpath=//td[6]/a/i", "xpath:position"],
+        ["xpath=//i[contains(.,'delete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ab35fdb-4344-4e67-8a3d-b5c6ee73926c",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "0edf8a58-354e-426b-bec3-cdf49ffe579e",
+    "name": "PretrazivanjeTest",
+    "commands": [{
+      "id": "535b46e1-7529-4b21-8b70-6fea9fffe17f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "900050b3-c714-4ca0-b2a6-3456fa00e0e8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1696x1026",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2a242f7-d50e-4f9b-adb2-45cef9c029bc",
+      "comment": "",
+      "command": "click",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["name=q", "name"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c286fe47-5c52-4f39-8ebd-c289903df887",
+      "comment": "",
+      "command": "type",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["name=q", "name"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Samsung"
+    }, {
+      "id": "d1203e5f-ee7d-4f2f-a9b7-345b9e1fe749",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["name=q", "name"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "2d9b12fd-10cc-46f5-b013-3ce5f6a2472a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.header__info > span:nth-child(2)",
+      "targets": [
+        ["css=.header__info > span:nth-child(2)", "css:finder"],
+        ["xpath=//span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'032 / 652 014')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2a3ad20-c362-477b-8e4e-1bd41692be42",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.header__info > span:nth-child(2)",
+      "targets": [
+        ["css=.header__info > span:nth-child(2)", "css:finder"],
+        ["xpath=//span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'032 / 652 014')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "90b243f5-93c6-4f7b-a249-c09e66bfee42",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product-box:nth-child(1) .product-box__name",
+      "targets": [
+        ["css=.product-box:nth-child(1) .product-box__name", "css:finder"],
+        ["xpath=//a/div[2]/div", "xpath:position"]
+      ],
+      "value": "Usisivač Samsung VCC4135"
+    }, {
+      "id": "69739eed-6b40-4d15-b5c6-8c8431ebe56d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product-box:nth-child(5) .product-box__name",
+      "targets": [
+        ["css=.product-box:nth-child(5) .product-box__name", "css:finder"],
+        ["xpath=//div[5]/a/div[2]/div", "xpath:position"]
+      ],
+      "value": "Televizor Samsung UE50TU7022KXXH, 50'' (125 cm), Smart TV, UHD TV, DVB-C, CI+, DVB-T2"
+    }, {
+      "id": "5e7a751e-452c-489f-8324-928473796d1b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "45d59575-ac1c-4b88-a0b1-060e8596b526",
+    "name": "FilterTest",
+    "commands": [{
+      "id": "ef87152e-3cc5-46eb-9a30-2bdf20eff22f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3fb67d8-5ab7-4636-b281-70b1165c97b5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1696x1026",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b6adc7cf-1d37-4b9d-a330-73d9c9338b60",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover .categories-submenu__list:nth-child(1) span",
+      "targets": [
+        ["css=.hover .categories-submenu__list:nth-child(1) span", "css:finder"],
+        ["xpath=//li[6]/div[2]/div/div/ul/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Monitori')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "43365d93-0a86-4963-89ec-4e8fe7d9195b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-value > .hover",
+      "targets": [
+        ["css=.filter-value > .hover", "css:finder"],
+        ["xpath=//div[@id='catalogue-filters']/div[2]/div[2]/div/div/div[2]/ul/li[4]/label", "xpath:idRelative"],
+        ["xpath=//li[4]/label", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f41d84af-a1c7-4a71-9cd6-b0fadbe71a96",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover > .iCheck-helper",
+      "targets": [
+        ["css=.hover > .iCheck-helper", "css:finder"],
+        ["xpath=//div[@id='catalogue-filters']/div[2]/div[2]/div/div[3]/div[2]/ul/li/label/div/ins", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/ul/li/label/div/ins", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "658b65d2-1376-4000-bb08-8d61d65b5a9e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product-box:nth-child(4) .product-box__name",
+      "targets": [
+        ["css=.product-box:nth-child(4) .product-box__name", "css:finder"],
+        ["xpath=//div[@id='catalogue-products']/div[4]/a/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/a/div[2]/div", "xpath:position"]
+      ],
+      "value": "Monitor Samsung LC24F390FHRXEN 24\"/VA,zakrivljen/1920x1080/60Hz/VGA,HDMI/Freesync/VESA/crna"
+    }, {
+      "id": "b9b1bb00-a89c-4e77-82f0-18326409e691",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product-box:nth-child(12) .product-box__name",
+      "targets": [
+        ["css=.product-box:nth-child(12) .product-box__name", "css:finder"],
+        ["xpath=//div[@id='catalogue-products']/div[12]/a/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[12]/a/div[2]/div", "xpath:position"]
+      ],
+      "value": "Monitor SAMSUNG LF22T350FHRXDU 22\"/IPS/1920x1080/75Hz/5ms GtG/VGA,HDMI/Freesync/VESA"
+    }, {
+      "id": "9ef9a440-e964-4bab-b486-135a45e5466c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product-box:nth-child(14) .product-box__name",
+      "targets": [
+        ["css=.product-box:nth-child(14) .product-box__name", "css:finder"],
+        ["xpath=//div[@id='catalogue-products']/div[14]/a/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[14]/a/div[2]/div", "xpath:position"]
+      ],
+      "value": "Monitor Samsung LF24T350FHUXEN 24\"/IPS/1920x1080/75Hz/5ms GtG/VGA,HDMI/Freesync/VESA"
+    }, {
+      "id": "85e780f6-fd8a-4e01-8559-ed9dde681b4b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "98026b9f-7d8c-4dbc-81e6-ae416107b083",
+    "name": "PerfomanseTest",
+    "commands": [{
+      "id": "63cf976a-9a74-48e5-8a3e-771ccb05bd00",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "35b7af46-eac1-4207-96ef-5e552463c075",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1425x1010",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7689ed8b-73ad-4d25-9d28-6e0840c4627a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Prijavi se",
+      "targets": [
+        ["linkText=Prijavi se", "linkText"],
+        ["css=.header__menu > li:nth-child(4) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Prijavi se')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/login')])[2]", "xpath:href"],
+        ["xpath=//header/div/div[2]/div/ul/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "72d03d25-5355-4140-9b32-3fbbd9c99689",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Dostava",
+      "targets": [
+        ["linkText=Dostava", "linkText"],
+        ["css=.header__menu > li:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Dostava')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/page/besplatna-dostava')])[2]", "xpath:href"],
+        ["xpath=//header/div/div[2]/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a355297-feee-42f3-a1ec-762e6b581091",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h4:nth-child(1)",
+      "targets": [
+        ["css=h4:nth-child(1)", "css:finder"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Mi brinemo da put proizvoda do Vašeg doma bude ugodan, brz I bezbedan.')]", "xpath:innerText"]
+      ],
+      "value": "Mi brinemo da put proizvoda do Vašeg doma bude ugodan, brz I bezbedan."
+    }, {
+      "id": "174d88a3-91f5-4583-9966-a200e5ce9fba",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Posao u Spektru",
+      "targets": [
+        ["linkText=Posao u Spektru", "linkText"],
+        ["css=.esh__side-menu li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Posao u Spektru')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/page/posao-i-karijera')]", "xpath:href"],
+        ["xpath=//div/div[2]/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Posao u Spektru')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "606c5dc7-07b4-40e5-b384-0f0b7d6090e8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Posao u Spektru')]", "xpath:innerText"]
+      ],
+      "value": "Posao u Spektru"
+    }, {
+      "id": "b172a189-b3cf-4d6b-af85-e1f1052b2814",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Reklamacije",
+      "targets": [
+        ["linkText=Reklamacije", "linkText"],
+        ["css=.esh__side-menu li:nth-child(9) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Reklamacije')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/page/reklamacije')]", "xpath:href"],
+        ["xpath=//div/div[2]/div/div/ul/li[9]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Reklamacije')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "972ecd8d-9aba-4e90-88d8-a9b3598abe4f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Reklamacije')]", "xpath:innerText"]
+      ],
+      "value": "Reklamacije"
+    }, {
+      "id": "97bd7ec0-1bb4-4c44-acb4-b0b1bdb37f07",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Blog",
+      "targets": [
+        ["linkText=Blog", "linkText"],
+        ["css=.header__menu > li:nth-child(2) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Blog')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/kucni-aparati/blog')])[2]", "xpath:href"],
+        ["xpath=//header/div/div[2]/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6eeedadf-ab05-4a8f-86ac-07b4d13ab536",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.page",
+      "targets": [
+        ["css=.page", "css:finder"],
+        ["xpath=//body/div[2]/div[3]", "xpath:position"]
+      ],
+      "value": "E-Shop Blog\\nsearch\\nGorenje Spektar\\n21.08.2022.\\nfavorite8\\nDočekajte zimu spremni uz program na pelet\\n29.06.2022.\\nfavorite22\\nAparati za kafu – Dnevna doza kofeina svakog ljubitelja kafe\\nIzaberi svoj klima uređaj\\n06.06.2022.\\nfavorite25\\nProlećno čišćenje\\n09.05.2022.\\nfavorite10\\nMladenci\\n21.03.2022.\\nfavorite12\\nWebOS sistemi\\n03.02.2022.\\nfavorite18\\nOgrebi svoj popust.\\n01.07.2021.\\nfavorite16\\nProlećni vikend tehnike\\n20.05.2021.\\nfavorite7\\nKupovina u par klikova\\n16.03.2021.\\nfavorite8\\n2. rođendan Salona Tehnike - popust na sve\\n09.12.2020.\\nfavorite2\\nOgrebi popust!\\n10.07.2020.\\nfavorite21\\nVikend tehnike donosi popuste\\n13.05.2020.\\nfavorite8\\n1. rođendan Salona tehnike - svi ste pozvani\\n10.12.2019.\\nfavorite6\\nAlfa Plam daruje!\\n09.12.2019.\\nfavorite3\\nBlack Friday!!!\\n25.11.2019.\\nfavorite26\\nNoć Gorenje kupovine - popusti, ackije, žurka...\\n17.07.2019.\\nfavorite89\\nVelika julska VOX ponuda\\n15.07.2019.\\nfavorite24\\nG-Force usisivači - Nežni prema vama, nemilosrdni prema prašini\\n01.07.2019.\\nfavorite14\\nPRIKAŽI VIŠE"
+    }, {
+      "id": "d43c7b75-089b-4ce1-8622-f1fc20d08374",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Kontakt",
+      "targets": [
+        ["linkText=Kontakt", "linkText"],
+        ["css=.header__menu > li:nth-child(3) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Kontakt')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/kontakt')])[2]", "xpath:href"],
+        ["xpath=//header/div/div[2]/div/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "585a3e96-6cf2-4be9-a455-81d8b59e2aa3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.contact",
+      "targets": [
+        ["css=.contact", "css:finder"],
+        ["xpath=//div[4]/div", "xpath:position"]
+      ],
+      "value": "Prodavnice\\nIvanjica\\nSalon Tehnike Senjak\\nŠume bb\\ntel: 032 / 652 014\\nsenjak@spektar.rs\\nIvanjica\\nProdavnica br 1\\nUl. Boška Petrovića bb\\ntel: 032 / 663 647\\nmaloprodaja1@spektar.rs\\nIvanjica\\nProdavnica br 2\\nUl. Boška Petrovića 28\\ntel: 032 / 663 050\\nmaloprodaja2@spektar.rs\\nPožega\\nProdavnica br 3\\nUl. Knjaza Miloša 28\\ntel: 031 / 38 25 360\\npozega@spektar.rs\\nLučani\\nProdavnica br 4\\nUl. Jugoslovenske armije 6\\ntel: 032 / 819 528\\nlucani@spektar.rs\\nKeyboard shortcuts\\nMap data ©2022\\nTerms of Use"
+    }, {
+      "id": "f5ab1002-699f-45db-8fee-7caedac0745b",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "3492b034-0a46-4665-9ede-01596d53f1e1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3404b3ac-a12a-45a0-8e5a-2d25f88589d0"]
+  }],
+  "urls": ["https://spektar.rs/"],
+  "plugins": []
+}

@@ -1,0 +1,65 @@
+Testiranje metode 
+	Naziv testa: 
+	Opis testa: 
+	Test je uspesno prosao: false
+
+Testiranje metode 
+	Naziv testa: 
+	Opis testa: 
+	Test je uspesno prosao: false
+
+Testiranje metode 
+	Naziv testa: 
+	Opis testa: 
+	Test je uspesno prosao: false
+
+Testiranje metode 
+	Naziv testa: 
+	Opis testa: 
+	Test je uspesno prosao: false
+
+Testiranje metode 
+	Naziv testa: 
+	Opis testa: 
+	Test je uspesno prosao: false
+
+Testiranje metode 
+	Naziv testa: 
+	Opis testa: 
+	Test je uspesno prosao: false
+
+	
+
+
+Testiranje metode 
+	Naziv testa: 
+	Opis testa: 
+	Test je uspesno prosao: false
+
+	
+
+
+Testiranje metode 
+	Naziv testa: 
+	Opis testa: 
+	Test je uspesno prosao: false
+
+	
+
+
+Testiranje metode 
+	Naziv testa: 
+	Opis testa: 
+	Test je uspesno prosao: false
+
+	
+
+
+Testiranje metode 
+	Naziv testa: 
+	Opis testa: 
+	Test je uspesno prosao: false
+
+	
+
+
